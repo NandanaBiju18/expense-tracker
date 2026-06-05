@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<script>
+if(!localStorage.getItem("loggedInUser"))
+{
+    window.location.href = "login.html";
+}
+</script>
+
+<h2>💖 Expense Tracker</h2>
+
+<h3 id="welcomeUser"></h3>
+
+<div class="dashboard-card">
+
+    <div class="stat-card">
+        <i class="fas fa-piggy-bank"></i>
+        <h3>Total Savings</h3>
+        <p>₹<span id="savings">0</span></p>
+    </div>
+
+    <div class="stat-card">
+        <i class="fas fa-wallet"></i>
+        <h3>Total Expenses</h3>
+        <p>₹<span id="expense">0</span></p>
+    </div>
+
+   
+
+</div>
+
+<div class="container">
+
+    <button onclick="goToSavings()">
+        <i class="fas fa-piggy-bank"></i>
+        Add Savings
+    </button>
+
+    <button onclick="goToAdd()">
+        <i class="fas fa-plus-circle"></i>
+        Add Expense
+    </button>
+
+    <button onclick="goToMonthly()">
+        <i class="fas fa-chart-line"></i>
+        Monthly Report
+    </button>
+
+    <button onclick="goToNotes()">📝 Notes</button>
+
+    <button onclick="logout()">
+        <i class="fas fa-sign-out-alt"></i>
+        Logout
+    </button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
+

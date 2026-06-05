@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monthly Report</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<script>
+if (!localStorage.getItem("loggedInUser")) {
+    window.location.href = "login.html";
+}
+</script>
+
+<h2>📊 Monthly Expense Report</h2>
+
+<div class="container">
+
+    <!-- MONTH SELECT CARD -->
+    <div class="card">
+        <h3>Select Month</h3>
+        <select id="monthSelect" onchange="showCategoryChart()"></select>
+    </div>
+
+    <!-- CATEGORY CHART -->
+    <div class="card">
+        <h3>Category Breakdown</h3>
+        <canvas id="categoryChart"></canvas>
+    </div>
+
+    <!-- ALL CATEGORY -->
+    <div class="card">
+        <h3>All Time Category</h3>
+        <canvas id="allCategoryChart"></canvas>
+    </div>
+
+    <!-- YEAR FLOW -->
+    <div class="card">
+        <h3>Year Flow (Monthly Total)</h3>
+        <canvas id="yearChart"></canvas>
+    </div>
+
+    <!-- BACK BUTTON -->
+    <div class="card">
+        <button onclick="back()">⬅ Back to Dashboard</button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

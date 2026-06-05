@@ -1,0 +1,180 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #fff8f2;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    color: #d86c92;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #c95c85;
+}
+
+.container {
+    background: #ffe4ec;
+    width: 350px;
+    max-width: 90%;
+    margin: auto;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+input {
+    width: 90%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #f5b6c8;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+button {
+    width: 90%;
+    padding: 10px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 8px;
+    background: #f48fb1;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #ec729c;
+}
+
+ul {
+    padding: 0;
+    margin-top: 20px;
+}
+
+li {
+    list-style: none;
+    background: white;
+    width: 400px;
+    max-width: 90%;
+    margin: 10px auto;
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    color: #555;
+}
+
+#total,
+#income,
+#expense,
+#balance {
+    font-weight: bold;
+    color: #d86c92;
+}
+
+a {
+    color: #d86c92;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.dashboard-card{
+    display:flex;
+    justify-content:center;
+    margin:20px;
+}
+
+.stat-card{
+    background:white;
+    width:250px;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+}
+
+.stat-card i{
+    font-size:40px;
+    color:#f48fb1;
+}
+
+.stat-card h3{
+    margin:10px 0;
+    color:#555;
+}
+
+.stat-card p{
+    font-size:28px;
+    font-weight:bold;
+    color:#d86c92;
+}
+
+.container button{
+    display:block;
+    margin:12px auto;
+}
+
+button i{
+    margin-right:8px;
+}
+/* ================= MONTHLY PAGE FIX ================= */
+
+.card {
+    background: white;
+    width: 90%;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    color: #c95c85;
+}
+
+/* dropdown fix */
+select {
+    width: 90%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #f5b6c8;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* chart fix */
+canvas {
+    max-width: 100%;
+    height: 250px !important;
+    margin-top: 10px;
+}
+
+/* back button spacing fix */
+.card button {
+    width: 90%;
+}
+
+@media (max-width: 600px) {
+
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    button, input {
+        width: 100%;
+    }
+
+    li {
+        width: 90%;
+    }
+}

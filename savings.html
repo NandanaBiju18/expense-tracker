@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savings</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>💰 Savings Manager</h2>
+
+<div class="container">
+
+    <h3>Current Savings: ₹<span id="currentSavings">0</span></h3>
+
+    <input type="number" id="savingAmount" placeholder="Enter amount">
+
+    <button onclick="increaseSavings()">➕ Add Savings</button>
+    <button onclick="decreaseSavings()">➖ Reduce Savings</button>
+
+    <button onclick="back()">Back</button>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Expense</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<script>
+if(!localStorage.getItem("loggedInUser"))
+{
+    window.location = "login.html";
+}
+</script>
+<h2>Add Expense</h2>
+
+<div class="container">
+    <input type="text" id="text" placeholder="Description">
+    <input type="number" id="amount" placeholder="Expense Amount">
+<select id="category">
+    <option value="Food">Food</option>
+    <option value="Travel">Travel</option>
+    <option value="Stationary">Stationary</option>
+    <option value="Fees">Fees</option>
+    <option value="Hostel Fee">Hostel Fee</option>
+    <option value="Self">Self</option>
+    <option value="Others">Others</option>
+</select>
+    <input type="date" id="date">
+    <button onclick="setToday()">Today</button>
+
+    <button onclick="addTransaction()">Add</button>
+    <button onclick="back()">Back</button>
+</div>
+<h3>Total Expense: ₹<span id="total">0</span></h3>
+
+
+
+<ul id="list"></ul>
+<script src="script.js"></script>
+</body>
+</html>
