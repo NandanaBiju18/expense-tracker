@@ -1,4 +1,5 @@
 💖 Expense Tracker
+
 Introduction
 
 Expense Tracker is a simple and user-friendly web application developed using HTML, CSS, and JavaScript. It helps users manage their personal finances by recording expenses and savings, tracking monthly spending and storing it according to categories. Gives monthy spending chart and bar chart comparing all months expenditure. The application provides a clean and attractive interface while storing data locally in the browser using Local Storage.
